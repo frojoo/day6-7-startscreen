@@ -1,0 +1,32 @@
+body {
+  color: black;
+  margin: 0;
+}
+
+.bgVideo {
+  position: fixed; //고정, 창에 맞게 비디오 크기 맞춰짐
+  top: 0; //위의 여백 공간 및 h1 사라짐
+  left: 0;
+  width: 100vw; //vw
+  height: 100vh; //vh, 스크롤을 위해 수정 가능
+  object-fit: cover; //cover로 글자 박스 가리고 전체 화면 덮게
+}
+
+main {
+  position: fixed;
+  z-index: 2; //xyz할 때 z, 레이어 정렬, 숫자가 높을수록 앞으로
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.time {
+  font-size: 65px;
+  color: white;
+  font-style: oblique;
+  text-shadow: -3px 2px rgba(194, 118, 19, 0.861);
+  font-family: "Lora", serif;
+}
