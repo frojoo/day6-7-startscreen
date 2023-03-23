@@ -29,26 +29,4 @@ main {
     text-shadow: -3px 2px rgba(194, 118, 19, 0.861);
     font-family: "Lora", serif;
   }
-
-  .quotes {
-    position: relative;
-    font-size: 40px;
-
-    .quotesAddBtn {
-      display: none;
-      position: absolute;
-      top: 50%;
-      right: 50%;
-      transform: translate(50%, -50%);
-    }
-    &:hover {
-      .quotesAddBtn {
-        display: inline-block;
-      }
-    }
-  }
-
-  .newQuotes {
-    display: none;
-  }
 }
