@@ -1,3 +1,13 @@
+@keyframes spin {
+  //새로운 animate 만들기
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 body {
   color: black;
   margin: 0;
@@ -49,6 +59,67 @@ main {
   }
 
   .newQuotes {
+    display: none;
+  }
+
+  .search {
+    .searchLogo {
+      width: 32px;
+      height: 32px;
+
+      animation: spin 20s linear infinite; //linear 동일한 속도
+    }
+  }
+
+  .searchResult {
+    display: none;
+  }
+
+  .nft {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    img {
+      width: 120px;
+      height: 120px;
+    }
+
+    .nftHover {
+      position: absolute;
+      display: none;
+      width: 120px;
+      height: 120px;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+
+      a {
+        background-color: white;
+      }
+      button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: -8px;
+        border-radius: 9999px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    &:hover {
+      .nftHover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  .nftView {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 24px;
     display: none;
   }
 }
